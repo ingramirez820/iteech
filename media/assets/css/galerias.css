@@ -1,0 +1,60 @@
+/* Portadas */
+
+.portada{
+	background-position: center;
+	background-size: cover;
+}
+
+.descripcion{
+	color: #FFF;
+	padding: 20px;
+	margin-bottom: 20px;
+	height: 350px;
+	text-align: center ; 
+	align-content: center;
+	display: grid;
+	background-color: rgb(0, 0, 0 , 0.5);
+}
+
+.descripcion p{
+	margin-bottom: 0;
+}
+
+
+.cuadro-galeria:hover{
+	text-decoration: none;
+}
+
+
+/* Modal */
+.thumbs{
+	position: inherit !important ;
+}
+
+.thumbs li{
+	width: auto ;
+}
+
+.thumbs li img{
+	max-height: 50px;
+	max-width: 100px;
+	margin-left: auto;
+}
+
+.modal-galeria{
+	max-width: 900px !important;
+}
+
+.modal-header{
+	background-color: #0194b6 ;
+	color: #FFF ;
+}
+
+.modal-header h4{
+	margin: auto ;
+	font-weight: bolder;
+}
+
+.modal-header .close{
+	margin: 0 !important;
+}
