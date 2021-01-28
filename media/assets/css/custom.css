@@ -96,6 +96,31 @@
 * {
   font-family: "Myriad Pro", Arial, Helvetica, sans-serif;
 }
+#logo{
+  animation:logo 5s infinite;
+  -moz-animation:logo 5s infinite;
+  -webkit-animation:logo 5s infinite;
+}
+#telephone{
+  animation:telefono 0.5s infinite;
+  -moz-animation:telefono 0.5s infinite;
+  -webkit-animation:telefono 0.5s infinite;
+}
+#twitter{
+  animation:twitter 4s infinite;
+  -moz-animation:twitter 4s infinite;
+  -webkit-animation:twitter 4s infinite;
+}
+#facebook{
+  animation:facebook 4s infinite;
+  -moz-animation:facebook 4s infinite;
+  -webkit-animation:facebook 4s infinite;
+}
+#email{
+  animation:email 4s infinite;
+  -moz-animation:email 4s infinite;
+  -webkit-animation:email 4s infinite;
+}
 
 .hrBorder1 {
   border-top: 3px solid var(--color-first);
@@ -571,4 +596,29 @@ footer p {
      border: 0px solid var(--color-tenth);
 }
 
-
+@keyframes logo {
+  0%   { transform:scale(1) ; -webkit-transform:scale(1) ; -moz-transform:scale(1) ; -ms-transform:scale(1) ; -o-transform:scale(1) ; }
+  50% { transform:scale(1.4) ; -webkit-transform:scale(1.4) ; -moz-transform:scale(1.4) ; -ms-transform:scale(1.4) ; -o-transform:scale(1.4) ; }
+  100% { transform:scale(1) ; -webkit-transform:scale(1) ; -moz-transform:scale(1) ; -ms-transform:scale(1) ; -o-transform:scale(1) ; }
+}
+@keyframes telefono {
+  0%   { transform:rotate(10deg) ; -webkit-transform:rotate(10deg) ; -moz-transform:rotate(10deg) ; -ms-transform:rotate(10deg) ; -o-transform:rotate(10deg) ; }
+  50%  { transform:rotate(0deg) ; -webkit-transform:rotate(0deg) ; -moz-transform:rotate(0deg) ; -ms-transform:rotate(0deg) ; -o-transform:rotate(0deg) ; }
+  75% { transform:rotate(-10deg) ; -webkit-transform:rotate(-10deg) ; -moz-transform:rotate(-10deg) ; -ms-transform:rotate(-10deg) ; -o-transform:rotate(-10deg) ; }
+  100%  { transform:rotate(0deg) ; -webkit-transform:rotate(0deg) ; -moz-transform:rotate(0deg) ; -ms-transform:rotate(0deg) ; -o-transform:rotate(0deg) ; }
+}
+@keyframes twitter {
+  0%   { transform:scale(1) ; -webkit-transform:scale(1) ; -moz-transform:scale(1) ; -ms-transform:scale(1) ; -o-transform:scale(1) ; }
+  50% { transform:scale(1.2) ; -webkit-transform:scale(1.2) ; -moz-transform:scale(1.2) ; -ms-transform:scale(1.2) ; -o-transform:scale(1.2) ; }
+  100% { transform:scale(1) ; -webkit-transform:scale(1) ; -moz-transform:scale(1) ; -ms-transform:scale(1) ; -o-transform:scale(1) ; }
+}
+@keyframes facebook {
+  0%   { transform:scale(1) ; -webkit-transform:scale(1) ; -moz-transform:scale(1) ; -ms-transform:scale(1) ; -o-transform:scale(1) ; }
+  50% { transform:scale(1.2) ; -webkit-transform:scale(1.2) ; -moz-transform:scale(1.2) ; -ms-transform:scale(1.2) ; -o-transform:scale(1.2) ; }
+  100% { transform:scale(1) ; -webkit-transform:scale(1) ; -moz-transform:scale(1) ; -ms-transform:scale(1) ; -o-transform:scale(1) ; }
+}
+@keyframes email {
+  0%   { transform:scale(1) ; -webkit-transform:scale(1) ; -moz-transform:scale(1) ; -ms-transform:scale(1) ; -o-transform:scale(1) ; }
+  50% { transform:scale(1.2) ; -webkit-transform:scale(1.2) ; -moz-transform:scale(1.2) ; -ms-transform:scale(1.2) ; -o-transform:scale(1.2) ; }
+  100% { transform:scale(1) ; -webkit-transform:scale(1) ; -moz-transform:scale(1) ; -ms-transform:scale(1) ; -o-transform:scale(1) ; }
+}
