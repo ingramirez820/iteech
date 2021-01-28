@@ -1,11 +1,11 @@
 :root{
-  --color-first:#118680;
+  --color-first:#a30051;/*#118680;//header*/
   --color-second:#ffffff;
   --color-third:#b1a252;
   --color-fourth: #9240a3;
   --color-fifth:#666666;
-  --color-sixth:#341c8a;
-  --color-seventh:#24135f;
+  --color-sixth:#8a511c;
+  --color-seventh:#a30051;/*#24135f;//footer*/
   --color-eighth:#a30051;
   --color-nineth:#73495d;
   --color-tenth:#ddd;
@@ -74,16 +74,17 @@
   color: var(--color-fifth);
 }
 
-.bg-image-1 {
-  background-image: url("../../media/images-full-background/bg-ninos-1x.jpg");
+.bg-image-2 {
+  background-image: url("../../media/images-full-background/bg-ninos-1x_bar.jpg");
   background-position: top;
   background-size: cover;
-  min-height: 200px;
-  color: var(--color-second);
+  background-color: transparent;
+  min-height: 300px;
+  /* color: var(--color-second); */
   background-attachment: inherit;
 }
 
-.bg-image-2 {
+.bg-image-3 {
   background-image: url("../../media/images-full-background/bg-aves.jpg");
   background-position: top;
   background-size: cover;

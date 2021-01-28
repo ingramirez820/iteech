@@ -38,14 +38,14 @@ var laLinea = $("#laLinea");
     if ($(window).scrollTop() >= laLinea.height()) {
       headerMain.css({
         "background": "rgba(254, 254, 254, .9)"});
-      $(".navbar").css("background","rgba(17,134,128, 1)");
-      $(".logo-DG").css("width", "60px");
+      $(".navbar").css("background","rgba(163, 0, 81, 1)");
+      $(".logo-DG").css("width", "200px");
     } else {
       headerMain.css(
         {
         "background": "rgba(254, 254, 254, 1)"});
-        $(".navbar").css("background","rgba(17,134,128, 1)");
-        $(".logo-DG").css("width", "147px");
+        $(".navbar").css("background","rgba(163, 0, 81, 1)");
+        $(".logo-DG").css("width", "300px");
     }
   });
 
