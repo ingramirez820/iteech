@@ -10,6 +10,7 @@
   --color-nineth:#73495d;
   --color-tenth:#ddd;
 }
+
 .bg-main {
   background: var(--color-seventh);
   color: var(--color-second);
@@ -96,6 +97,9 @@
 * {
   font-family: "Myriad Pro", Arial, Helvetica, sans-serif;
 }
+/* .nav-up{
+  top:-105px
+} */
 #logo{
   animation:logo 5s infinite;
   -moz-animation:logo 5s infinite;
