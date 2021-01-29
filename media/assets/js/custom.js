@@ -49,7 +49,7 @@ var laLinea = $("#laLinea");
     }
   });
 
-/*   // Hide Header on on scroll down
+  // Hide Header on on scroll down
 var didScroll;
 var lastScrollTop = 0;
 var delta = 5;
@@ -86,7 +86,7 @@ function hasScrolled() {
     }
     
     lastScrollTop = st;
-} */
+}
 // Ejemplo para el modal
 var cardPopUp = $("#card-popUp");
 var mainContent = $(".main");

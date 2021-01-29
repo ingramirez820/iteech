@@ -97,9 +97,9 @@
 * {
   font-family: "Myriad Pro", Arial, Helvetica, sans-serif;
 }
-/* .nav-up{
+.nav-up{
   top:-105px
-} */
+}
 #logo{
   animation:logo 5s infinite;
   -moz-animation:logo 5s infinite;
