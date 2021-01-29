@@ -5,12 +5,15 @@
   --color-fourth: #9240a3;
   --color-fifth:#666666;
   --color-sixth:#8a511c;
-  --color-seventh:#a30051;/*#24135f;//footer*/
+  --color-seventh:#a30051;/*//footer*/
   --color-eighth:#a30051;
   --color-nineth:#73495d;
   --color-tenth:#ddd;
+  --color-eleventh:#3030bb;
+  --color-ttfe:#d00697;
+  --color-bgc:#d00697;
+  /*d00697 EC008C 2A2766*/
 }
-
 .bg-main {
   background: var(--color-seventh);
   color: var(--color-second);
@@ -36,13 +39,15 @@
 }
 
 .bg-fourth {
-  background: var(--color-first);
+  background: var(--color-eleventh);
   color: var(--color-second);
 }
 .bg-fourth p, .bg-fourth .fa, .bg-fourth .fas, .bg-fourth .far {
   color: var(--color-second);
 }
-
+.bg-ttfe{
+  color: var(--color-ttfe);
+}
 .bg-fifth {
   background: var(--color-third);
   color: var(--color-second);
@@ -98,7 +103,7 @@
   font-family: "Myriad Pro", Arial, Helvetica, sans-serif;
 }
 .nav-up{
-  top:-105px
+  top:-130px
 }
 #logo{
   animation:logo 5s infinite;
@@ -476,10 +481,11 @@ footer p {
 }
 .card-defensoria .card-header {
   background: var(--color-eighth);
+  
   border-bottom: none;
 }
 .card-defensoria .card-body {
-  background: var(--color-first);
+  background: var(--color-bgc); 
   -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2);
