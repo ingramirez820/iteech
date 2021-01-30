@@ -5,13 +5,14 @@
   --color-fourth: #9240a3;
   --color-fifth:#666666;
   --color-sixth:#8a511c;
-  --color-seventh:#a30051;/*//footer*/
+  --color-seventh:#2a2766;/*//footer*/
   --color-eighth:#a30051;
   --color-nineth:#73495d;
   --color-tenth:#ddd;
   --color-eleventh:#3030bb;
   --color-ttfe:#d00697;
   --color-bgc:#d00697;
+  --color-ft:#2a2766;
   /*d00697 EC008C 2A2766*/
 }
 .bg-main {
@@ -100,20 +101,30 @@
 }
 
 * {
-  font-family: "Nexa-Light", Arial, Helvetica, sans-serif; */
-
- 
+  font-family: "Nexa-Light", Arial, Helvetica, sans-serif; 
 }
 @font-face {
   font-family:'Nexa-Light'; font-style:normal;font-weight:400;src:url(/fonts/Nexa-Light.otf);
 }
-.nav-up{
-  top:-100px
+@font-face {
+  font-family:'Roboto Condensed'; font-style:normal;font-weight:400;src:url(/fonts/RobotoCondensed-Regular.eot);
 }
-.fixed{
+/* .nav-up{
+  top:-150px
+} */
+/* .fixed{
   position: fixed!important;
   height: 150px;
   background-color: #0b0146!important;
+} */
+.logo-brand{
+  width: 50px;
+}
+.texto{
+  font-family:'Roboto Condensed' ;
+}
+.texto-footer{
+  font-size: 16px;
 }
 #logo{
   animation:logo 5s infinite;

@@ -104,3 +104,13 @@ var mainContent = $(".main");
       });
     })
 });
+let ubicacionPrincipal = window.pageYOffset;
+window.onscroll =function(){
+  let desplazamientoActual = window.pageYOffset;
+  if(ubicacionPrincipal>=desplazamientoActual){
+    document.getElementsById('scrollNav').style.top='0';
+  }else{
+    document.getElementsById('scrollNav').style.top='-150px';
+  }
+  ubicacionPrincipal=desplazamientoActual;
+}
