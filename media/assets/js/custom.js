@@ -31,23 +31,23 @@ $(document).ready(function() {
     margenSuperior();
     });
 
-var laLinea = $("#laLinea");
-  // // funcion para ajustar el header
-  $(window).scroll(function() {
-    var headerMain =  $("header");
-    if ($(window).scrollTop() >= laLinea.height()) {
-      headerMain.css({
-        "background": "rgba(254, 254, 254, .9)"});
-      $(".navbar").css("background","rgba(163, 0, 81, 1)");
-      $(".logo-DG").css("width", "60px");
-    } else {
-      headerMain.css(
-        {
-        "background": "rgba(254, 254, 254, 1)"});
-        $(".navbar").css("background","rgba(163, 0, 81, 1)");
-        $(".logo-DG").css("width", "147px");
-    }
-  });
+// Ejemplo para el modal
+var cardPopUp = $("#card-popUp");
+var mainContent = $(".main");
+
+    cardPopUp.click(function(e){
+      e.preventDefault();
+      mainContent.empty();
+      console.log("click");
+      $('#myModal').modal('show');
+    });
+    $('#myModal').on('hidden.bs.modal', function (e) {
+      location.reload();
+      mainContent.load("views/main/main.php", function(){
+        document.location.href = "#card-popUp";
+      });
+    })
+});
 
   // Hide Header on on scroll down
 var didScroll;
@@ -75,42 +75,17 @@ function hasScrolled() {
     
     // If they scrolled down and are past the navbar, add class .nav-up.
     // This is necessary so you never see what is "behind" the navbar.
-    if (st > lastScrollTop && st > navbarHeight){
+    if (st > 145){
         // Scroll Down
         $('header').removeClass('nav-down').addClass('nav-up');
+        
     } else {
         // Scroll Up
         if(st + $(window).height() < $(document).height()) {
             $('header').removeClass('nav-up').addClass('nav-down');
+            
         }
     }
     
     lastScrollTop = st;
-}
-// Ejemplo para el modal
-var cardPopUp = $("#card-popUp");
-var mainContent = $(".main");
-
-    cardPopUp.click(function(e){
-      e.preventDefault();
-      mainContent.empty();
-      console.log("click");
-      $('#myModal').modal('show');
-    });
-    $('#myModal').on('hidden.bs.modal', function (e) {
-      location.reload();
-      mainContent.load("views/main/main.php", function(){
-        document.location.href = "#card-popUp";
-      });
-    })
-});
-let ubicacionPrincipal = window.pageYOffset;
-window.onscroll =function(){
-  let desplazamientoActual = window.pageYOffset;
-  if(ubicacionPrincipal>=desplazamientoActual){
-    document.getElementsById('scrollNav').style.top='0';
-  }else{
-    document.getElementsById('scrollNav').style.top='-150px';
-  }
-  ubicacionPrincipal=desplazamientoActual;
 }

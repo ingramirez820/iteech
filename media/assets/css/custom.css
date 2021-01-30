@@ -109,15 +109,16 @@
 @font-face {
   font-family:'Roboto Condensed'; font-style:normal;font-weight:400;src:url(/fonts/RobotoCondensed-Regular.eot);
 }
-/* .nav-up{
-  top:-150px
-} */
-/* .fixed{
-  position: fixed!important;
-  height: 150px;
-  background-color: #0b0146!important;
-} */
-.logo-brand{
+.nav-up{
+   top:-160px ;
+}
+
+.logo-brand-off{
+  display:none;
+  width: 50px;
+}
+.logo-brand-on{
+  display: hidden;
   width: 50px;
 }
 .texto{
