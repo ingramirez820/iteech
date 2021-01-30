@@ -100,16 +100,27 @@
 }
 
 * {
-  font-family: "Myriad Pro", Arial, Helvetica, sans-serif;
+  font-family: "Nexa-Light", Arial, Helvetica, sans-serif; */
+
+ 
+}
+@font-face {
+  font-family:'Nexa-Light'; font-style:normal;font-weight:400;src:url(/fonts/Nexa-Light.otf);
 }
 .nav-up{
-  top:-130px
+  top:-100px
+}
+.fixed{
+  position: fixed!important;
+  height: 150px;
+  background-color: #0b0146!important;
 }
 #logo{
   animation:logo 5s infinite;
   -moz-animation:logo 5s infinite;
   -webkit-animation:logo 5s infinite;
 }
+
 #telephone{
   animation:telefono 0.5s infinite;
   -moz-animation:telefono 0.5s infinite;
@@ -130,6 +141,12 @@
   -moz-animation:email 4s infinite;
   -webkit-animation:email 4s infinite;
 }
+.resaltado{
+  font-family: 'Baloo 2', cursive !important;
+  font-size: 18px;
+  text-shadow: 1px 1px #0044ff;
+}
+
 
 .hrBorder1 {
   border-top: 3px solid var(--color-first);
